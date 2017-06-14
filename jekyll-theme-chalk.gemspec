@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-assets", "2.2.8"
   spec.add_runtime_dependency "jekyll-paginate", "1.1.0"
   spec.add_runtime_dependency "jekyll-sitemap", "1.1.1"
+  spec.add_runtime_dependency "jekyll-theme-pages", "0.1.0"
+  spec.add_runtime_dependency "jekyll-theme-assets", "0.1.0"
   spec.add_runtime_dependency "jemoji", "0.8.0"
 
   spec.add_development_dependency "bundler", "~> 1.12"
