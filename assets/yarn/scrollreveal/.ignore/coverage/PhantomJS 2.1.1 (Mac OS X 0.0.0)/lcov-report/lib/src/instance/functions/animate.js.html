@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/src/instance/functions/animate.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">all files</a> / <a href="index.html">lib/src/instance/functions/</a> animate.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">3.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/48</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">3.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/60</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { isElementVisible } from '../../utils/core'
+import clean from '../methods/clean'
+&nbsp;
+&nbsp;
+export default <span class="fstat-no" title="function not covered" >function animate (element) {</span>
+<span class="cstat-no" title="statement not covered" >	var this$1 = this;</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var isDelayed = element.config.useDelay === 'always'</span>
+		|| element.config.useDelay === 'onload' &amp;&amp; this.pristine
+		|| element.config.useDelay === 'once' &amp;&amp; !element.seen
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var sequence = (element.sequence) ? this.store.sequences[element.sequence.id] : null</span>
+<span class="cstat-no" title="statement not covered" >	var styles = [element.styles.inline]</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	if (isElementVisible.call(this, element) &amp;&amp; !element.visible) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (sequence !== null) {</span>
+<span class="cstat-no" title="statement not covered" >			if (sequence.head.index === null &amp;&amp; sequence.tail.index === null) {</span>
+<span class="cstat-no" title="statement not covered" >				sequence.head.index = sequence.tail.index = element.sequence.index</span>
+<span class="cstat-no" title="statement not covered" >				sequence.head.blocked = sequence.tail.blocked = true</span>
+&nbsp;
+			} else <span class="cstat-no" title="statement not covered" >if (sequence.head.index - 1 === element.sequence.index &amp;&amp; !sequence.head.blocked) {</span>
+<span class="cstat-no" title="statement not covered" >				sequence.head.index--</span>
+<span class="cstat-no" title="statement not covered" >				sequence.head.blocked = true</span>
+&nbsp;
+			} else <span class="cstat-no" title="statement not covered" >if (sequence.tail.index + 1 === element.sequence.index &amp;&amp; !sequence.tail.blocked) {</span>
+<span class="cstat-no" title="statement not covered" >				sequence.tail.index++</span>
+<span class="cstat-no" title="statement not covered" >				sequence.tail.blocked = true</span>
+&nbsp;
+			} else { <span class="cstat-no" title="statement not covered" >return }</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			window.setTimeout(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >				sequence.head.blocked = sequence.tail.blocked = false</span>
+<span class="cstat-no" title="statement not covered" >				this$1.delegate()</span>
+			}, sequence.interval)
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		styles.push(element.styles.opacity.computed)</span>
+<span class="cstat-no" title="statement not covered" >		styles.push(element.styles.transform.generated.final)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if (isDelayed) {</span>
+<span class="cstat-no" title="statement not covered" >			styles.push(element.styles.transition.generated.delayed)</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			styles.push(element.styles.transition.generated.instant)</span>
+		}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		element.seen = true</span>
+<span class="cstat-no" title="statement not covered" >		element.visible = true</span>
+<span class="cstat-no" title="statement not covered" >		registerCallbacks.call(this, element, isDelayed)</span>
+<span class="cstat-no" title="statement not covered" >		element.node.setAttribute('style', styles.join(' '))</span>
+&nbsp;
+	} else {
+<span class="cstat-no" title="statement not covered" >		if (!isElementVisible.call(this, element) &amp;&amp; element.visible &amp;&amp; element.config.reset) {</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			if (sequence) {</span>
+<span class="cstat-no" title="statement not covered" >				if (sequence.head.index === element.sequence.index) {</span>
+<span class="cstat-no" title="statement not covered" >					sequence.head.index++</span>
+				} else <span class="cstat-no" title="statement not covered" >if (sequence.tail.index === element.sequence.index) {</span>
+<span class="cstat-no" title="statement not covered" >					sequence.tail.index--</span>
+				} else { <span class="cstat-no" title="statement not covered" >return }</span>
+			}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			styles.push(element.styles.opacity.generated)</span>
+<span class="cstat-no" title="statement not covered" >			styles.push(element.styles.transform.generated.initial)</span>
+<span class="cstat-no" title="statement not covered" >			styles.push(element.styles.transition.generated.instant)</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >			element.visible = false</span>
+<span class="cstat-no" title="statement not covered" >			registerCallbacks.call(this, element)</span>
+<span class="cstat-no" title="statement not covered" >			element.node.setAttribute('style', styles.join(' '))</span>
+		}
+	}
+}
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >function registerCallbacks (element, isDelayed) {</span>
+<span class="cstat-no" title="statement not covered" >	var this$1 = this;</span>
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var duration = (isDelayed)</span>
+		? element.config.duration + element.config.delay
+		: element.config.duration
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var afterCallback</span>
+<span class="cstat-no" title="statement not covered" >	if (element.visible) {</span>
+<span class="cstat-no" title="statement not covered" >		element.config.beforeReveal(element.node)</span>
+<span class="cstat-no" title="statement not covered" >		afterCallback = element.config.afterReveal</span>
+	} else {
+<span class="cstat-no" title="statement not covered" >		element.config.beforeReset(element.node)</span>
+<span class="cstat-no" title="statement not covered" >		afterCallback = element.config.afterReset</span>
+	}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	var elapsed = 0</span>
+<span class="cstat-no" title="statement not covered" >	if (element.callbackTimer) {</span>
+<span class="cstat-no" title="statement not covered" >		elapsed = Date.now() - element.callbackTimer.start</span>
+<span class="cstat-no" title="statement not covered" >		window.clearTimeout(element.callbackTimer.clock)</span>
+	}
+&nbsp;
+<span class="cstat-no" title="statement not covered" >	element.callbackTimer = {</span>
+		start: Date.now(),
+		clock: window.setTimeout(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >			afterCallback(element.node)</span>
+<span class="cstat-no" title="statement not covered" >			element.callbackTimer = null</span>
+<span class="cstat-no" title="statement not covered" >			if (element.visible &amp;&amp; !element.config.reset) {</span>
+<span class="cstat-no" title="statement not covered" >				clean.call(this$1, element.node)</span>
+			}
+		}, duration - elapsed),
+	}
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Wed Apr 05 2017 15:41:10 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
