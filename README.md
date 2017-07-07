@@ -28,6 +28,8 @@ Or install it yourself as:
 
 ## Usage
 
+There is [`jekyll-theme-chalk-site`](https://github.com/ptsurbeleu/jekyll-theme-chalk-site) repository that has a very basic example (off the shelve) how to use this gem-based Chalk theme...
+
 TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
 
 ## Contributing
@@ -45,4 +47,3 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-

@@ -1,10 +1,12 @@
 *.gem
 .bundle
 .sass-cache
+.asset-cache
 _site
 CNAME
 circle.yml
 bin/**
-package.json
 yarn.lock
 docker-compose.yml
+jekyll_output.txt
+jekyll_status.txt
