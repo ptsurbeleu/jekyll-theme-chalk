@@ -2,4 +2,9 @@
 .bundle
 .sass-cache
 _site
-Gemfile.lock
+CNAME
+circle.yml
+bin/**
+package.json
+yarn.lock
+docker-compose.yml
